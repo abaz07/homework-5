@@ -44,5 +44,36 @@ public class Main {
         } else if (deliveryDistance > 100) {
             System.out.println("Потребуется 4 дня");
         }
+        //Задача 5
+        System.out.println("Задача 5");
+        int monthNumber = 12;
+        String season = null;
+        switch (monthNumber) {
+            case 12:
+            case 1:
+            case 2:
+                season = "Зима";
+                break;
+            case 3:
+            case 4:
+            case 5:
+                season = "Весна";
+                break;
+            case 6:
+            case 7:
+            case 8:
+                season = "Лето";
+                break;
+            case 9:
+            case 10:
+            case 11:
+                season = "Осень";
+                break;
+            default:
+                System.out.println("Указан неверный месяц");
+        }
+        if (season != null) {
+            System.out.println("Месяц " + monthNumber + " принадлежит сезону " + season);
+        }
     }
 }
